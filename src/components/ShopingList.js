@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ShopingListContainer from "../containers/ShopingListContainer";
-import "./ShopingList.css";
+import "./styles/ShopingList.css";
+
+import ShopingItem from "./ShopingItem";
 
 const ShopingList = ({ shopingList, onClick }) => (
   <ul className="shoping-list">
@@ -13,7 +14,7 @@ const ShopingList = ({ shopingList, onClick }) => (
       <span>size</span>
     </div>
     {shopingList.map(el => (
-      <ShopingListContainer key={el.id} {...el} />
+      <ShopingItem onClick={onClick} key={el.id} {...el} />
     ))}
   </ul>
 );

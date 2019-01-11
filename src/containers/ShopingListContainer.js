@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../actions";
 import ShopingItem from "../components/ShopingItem";
+import ShopingList from "../components/ShopingList";
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -10,10 +11,9 @@ const mapDispatchToProps = dispatch => {
     }
   };
 };
-
 const ShopingListContainer = connect(
   "",
   mapDispatchToProps
-)(ShopingItem);
+)(ShopingList);
 
 export default ShopingListContainer;

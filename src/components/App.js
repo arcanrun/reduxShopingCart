@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ShopingList from "./ShopingList";
+import ShopingListContainer from "../containers/ShopingListContainer";
 
 const API = [
   {
@@ -41,7 +41,7 @@ const API = [
 
 class App extends Component {
   render() {
-    return <ShopingList shopingList={API} />;
+    return <ShopingListContainer shopingList={API} />;
   }
 }
 
