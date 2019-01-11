@@ -1,0 +1,6 @@
+[
+    {"id":1, "name":"Latte", "price": 10.15, "count": 9 },
+    {"id":2, "name":"Cappuchino", "price": 13.33, "count": 9 },
+    {"id":3, "name":"Espresso", "price": 3.25, "count": 9 },
+    {"id":4, "name":"Frappe", "price": 15.15, "count": 9 }
+]

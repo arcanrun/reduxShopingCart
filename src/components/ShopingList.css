@@ -1,0 +1,28 @@
+.shoping-list {
+  width: 50%;
+  list-style-type: none;
+}
+.shoping-list li {
+  margin: 20px;
+}
+.shoping-list li span {
+  width: 100px;
+  display: inline-block;
+}
+.shoping-list li span:nth-child(3) {
+  color: #04c704;
+}
+
+.shoping-list li input {
+  width: 20px;
+}
+.shoping-list__title {
+  border-bottom: 1px solid #000000;
+  margin-left: 20px;
+}
+.shoping-list__title span {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100px;
+  display: inline-block;
+}
