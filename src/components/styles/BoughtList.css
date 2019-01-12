@@ -1,0 +1,33 @@
+.bought-list {
+  width: 50%;
+  overflow: auto;
+  float: right;
+  background-color: rgba(98, 210, 255, 0.4);
+}
+
+.bought-list__title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bought-list__title span {
+  color: #1ad413;
+}
+.bought-list__item {
+  background-color: #f76767;
+  border-radius: 10px;
+  width: 150px;
+  margin: 5px;
+  padding: 10px;
+  float: left;
+  color: #ffffff;
+}
+.bought-list__item p:nth-child(2) {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.bought-list__item_close_btn {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+}

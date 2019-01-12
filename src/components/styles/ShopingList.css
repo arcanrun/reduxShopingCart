@@ -1,6 +1,9 @@
 .shoping-list {
-  width: 50%;
+  width: 45%;
   list-style-type: none;
+  float: left;
+  background-color: rgba(226, 255, 98, 0.4);
+  margin-top: 0;
 }
 .shoping-list li {
   margin: 20px;
