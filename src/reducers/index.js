@@ -19,12 +19,12 @@ export const shopingCart = (state = { itmes: [], totalSum: 0 }, action) => {
       let newItems = [];
       state.itmes.forEach(el => {
         if (el.id !== action.payload.id) {
-          newTotalSum += parseFloat(el.price);
+          newTotalSum += parseFloat(el.price * el.count);
           newItems.push(el);
         }
       });
 
-      return { itmes: newItems, totalSum: newTotalSum };
+      return { ...state, itmes: newItems, totalSum: newTotalSum };
     default:
       return state;
   }

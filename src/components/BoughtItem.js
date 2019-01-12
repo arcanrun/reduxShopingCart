@@ -13,4 +13,13 @@ const BoughtItem = ({ id, name, price, count, size, onClick }) => (
     <p>size:{size}</p>
   </div>
 );
+
+BoughtItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  count: PropTypes.number.isRequired,
+  size: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
+};
 export default BoughtItem;
