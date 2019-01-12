@@ -1,6 +1,7 @@
 .bought-list {
   width: 50%;
   overflow: auto;
+  height: 500px;
   float: right;
   background-color: rgba(98, 210, 255, 0.4);
 }
