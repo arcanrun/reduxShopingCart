@@ -1,6 +1,8 @@
 import { ADD_TO_CART, REMOVE_ITEM, CLEAR_ALL } from "../actions/index";
 
-export const shopingCart = (state = { itmes: [], totalSum: 0 }, action) => {
+const initialState = { itmes: [], totalSum: 0 };
+
+export const shopingCart = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
       let arr = [...state.itmes, action.payload];
