@@ -15,7 +15,7 @@ const ShopingList = ({ shopingList, onClick, isFetching, error }) => (
     </div>
     {isFetching ? (
       <h1>Loading...</h1>
-    ) : !error ? (
+    ) : error ? (
       <h1>some erorr while fetching data</h1>
     ) : (
       shopingList.map(el => (
