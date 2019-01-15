@@ -5,8 +5,8 @@ import BoughtList from "../components/BoughtList";
 
 const mapStateToProps = state => {
   return {
-    totalSum: state.totalSum,
-    items: state.itmes
+    totalSum: state.shopingCart.totalSum,
+    items: state.shopingCart.itmes
   };
 };
 

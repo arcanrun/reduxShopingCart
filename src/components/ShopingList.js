@@ -4,7 +4,7 @@ import "./styles/ShopingList.css";
 
 import ShopingItem from "./ShopingItem";
 
-const ShopingList = ({ shopingList, onClick }) => (
+const ShopingList = ({ shopingList, onClick, isFetching, error }) => (
   <ul className="shoping-list">
     <div className="shoping-list__title">
       <span>id</span>
@@ -13,9 +13,15 @@ const ShopingList = ({ shopingList, onClick }) => (
       <span>count</span>
       <span>size</span>
     </div>
-    {shopingList.map(el => (
-      <ShopingItem onClick={onClick} key={el.id} {...el} />
-    ))}
+    {isFetching ? (
+      <h1>Loading...</h1>
+    ) : !error ? (
+      <h1>some erorr while fetching data</h1>
+    ) : (
+      shopingList.map(el => (
+        <ShopingItem onClick={onClick} key={el.id} {...el} />
+      ))
+    )}
   </ul>
 );
 

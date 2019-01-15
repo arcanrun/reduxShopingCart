@@ -1,15 +1,10 @@
 import { createStore, applyMiddleware } from "redux";
-import { createLogger } from "redux-logger";
+import { logger } from "redux-logger";
 import thunk from "redux-thunk";
-import { shopingCart } from "./reducers/index";
-
-const middleware = [thunk];
-if (process.env.NODE_ENV !== "production") {
-  middleware.push(createLogger());
-}
+import { rootReducer } from "./reducers/index";
 
 export const store = createStore(
-  shopingCart,
-  applyMiddleware(...middleware)
-  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  rootReducer,
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  applyMiddleware(thunk, logger)
 );
