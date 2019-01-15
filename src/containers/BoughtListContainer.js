@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { clearAll, removeItem } from "../actions";
+import { clearAll, removeItem } from "../actions/shopingCartActions";
 import BoughtList from "../components/BoughtList";
 
 const mapStateToProps = state => {

@@ -1,4 +1,8 @@
-import { ADD_TO_CART, REMOVE_ITEM, CLEAR_ALL } from "../actions/index";
+import {
+  ADD_TO_CART,
+  REMOVE_ITEM,
+  CLEAR_ALL
+} from "../actions/shopingCartActions";
 
 const initialState = { itmes: [], totalSum: 0 };
 
